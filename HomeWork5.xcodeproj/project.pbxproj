@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D5C912C82473AC1800833F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C912C72473AC1800833F7E /* AppDelegate.swift */; };
-		D5C912CA2473AC1900833F7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C912C92473AC1900833F7E /* SceneDelegate.swift */; };
 		D5C912CC2473AC1900833F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C912CB2473AC1900833F7E /* ViewController.swift */; };
 		D5C912CF2473AC1900833F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C912CD2473AC1900833F7E /* Main.storyboard */; };
 		D5C912D12473AC1900833F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C912D02473AC1900833F7E /* Assets.xcassets */; };
 		D5C912D42473AC1900833F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C912D22473AC1900833F7E /* LaunchScreen.storyboard */; };
+		D5C912E12473B70400833F7E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D5C912E02473B70400833F7E /* data.json */; };
+		D5C912E62474083400833F7E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C912E52474083400833F7E /* JsonHelper.swift */; };
+		D5C912E924742B5000833F7E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C912E824742B5000833F7E /* CustomCell.swift */; };
+		D5CBA11E247474160039DE60 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBA11D247474160039DE60 /* DetailsController.swift */; };
+		D5CBA12024747D3A0039DE60 /* AddItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBA11F24747D3A0039DE60 /* AddItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5C912C42473AC1800833F7E /* HomeWork5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C912C72473AC1800833F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5C912C92473AC1900833F7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5C912CB2473AC1900833F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5C912CE2473AC1900833F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5C912D02473AC1900833F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C912D32473AC1900833F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C912D52473AC1900833F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C912E02473B70400833F7E /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D5C912E52474083400833F7E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		D5C912E824742B5000833F7E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		D5CBA11D247474160039DE60 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		D5CBA11F24747D3A0039DE60 /* AddItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,75 @@
 		D5C912C62473AC1800833F7E /* HomeWork5 */ = {
 			isa = PBXGroup;
 			children = (
-				D5C912C72473AC1800833F7E /* AppDelegate.swift */,
-				D5C912C92473AC1900833F7E /* SceneDelegate.swift */,
-				D5C912CB2473AC1900833F7E /* ViewController.swift */,
-				D5C912CD2473AC1900833F7E /* Main.storyboard */,
-				D5C912D02473AC1900833F7E /* Assets.xcassets */,
-				D5C912D22473AC1900833F7E /* LaunchScreen.storyboard */,
-				D5C912D52473AC1900833F7E /* Info.plist */,
+				D5C912E724742B0F00833F7E /* View */,
+				D5C912E2247407E100833F7E /* Helpers */,
+				D5C912DF2473B6CB00833F7E /* json */,
+				D5C912DD2473AC6400833F7E /* Delegates */,
+				D5C912DE2473AC7100833F7E /* Controllers */,
+				D5C912DC2473AC5300833F7E /* Storyboards */,
+				D5C912DB2473AC4B00833F7E /* etc */,
 			);
 			path = HomeWork5;
+			sourceTree = "<group>";
+		};
+		D5C912DB2473AC4B00833F7E /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912D02473AC1900833F7E /* Assets.xcassets */,
+				D5C912D52473AC1900833F7E /* Info.plist */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
+		D5C912DC2473AC5300833F7E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912CD2473AC1900833F7E /* Main.storyboard */,
+				D5C912D22473AC1900833F7E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5C912DD2473AC6400833F7E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912C72473AC1800833F7E /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D5C912DE2473AC7100833F7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912CB2473AC1900833F7E /* ViewController.swift */,
+				D5CBA11D247474160039DE60 /* DetailsController.swift */,
+				D5CBA11F24747D3A0039DE60 /* AddItemController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D5C912DF2473B6CB00833F7E /* json */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912E02473B70400833F7E /* data.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		D5C912E2247407E100833F7E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912E52474083400833F7E /* JsonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5C912E724742B0F00833F7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5C912E824742B5000833F7E /* CustomCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +196,7 @@
 				D5C912D42473AC1900833F7E /* LaunchScreen.storyboard in Resources */,
 				D5C912D12473AC1900833F7E /* Assets.xcassets in Resources */,
 				D5C912CF2473AC1900833F7E /* Main.storyboard in Resources */,
+				D5C912E12473B70400833F7E /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CBA12024747D3A0039DE60 /* AddItemController.swift in Sources */,
+				D5C912E62474083400833F7E /* JsonHelper.swift in Sources */,
 				D5C912CC2473AC1900833F7E /* ViewController.swift in Sources */,
+				D5CBA11E247474160039DE60 /* DetailsController.swift in Sources */,
+				D5C912E924742B5000833F7E /* CustomCell.swift in Sources */,
 				D5C912C82473AC1800833F7E /* AppDelegate.swift in Sources */,
-				D5C912CA2473AC1900833F7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDNVRYS434;
-				INFOPLIST_FILE = HomeWork5/Info.plist;
+				INFOPLIST_FILE = HomeWork5/etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDNVRYS434;
-				INFOPLIST_FILE = HomeWork5/Info.plist;
+				INFOPLIST_FILE = HomeWork5/etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

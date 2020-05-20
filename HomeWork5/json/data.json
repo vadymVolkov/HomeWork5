@@ -1,0 +1,9 @@
+[
+    {"name": "Ivan", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    {"name": "Petr", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    {"name": "Gary", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    {"name": "Boris", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    {"name": "John", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    {"name": "Nelson", "surname": "Ivanov", "telephone": "+123456789", "city": "Odessa", "country": "Ukraine", "group": "Family"},
+    
+]
